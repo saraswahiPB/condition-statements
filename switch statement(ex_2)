@@ -1,0 +1,43 @@
+//WAJP to print the subject of a particular branch in specific year
+class college
+{
+    public static void main(String[] args)
+    {
+        int year=2;
+        String branch="ECE";
+        
+        switch(year)
+        {
+            case 1:System.out.println("Physics, Chemistry, Mathmetics");
+            break;
+            case 2:switch(branch)
+                   {
+                       case "CSE":System.out.println("DSA, DBMS, C");
+                       break;
+                       case "ECE":System.out.println("IEEE, DE, Signal");
+                       break;
+                       case "MECH":System.out.println("BTD, MOM, SOM");
+                   }
+                   break;
+            case 3:switch(branch)
+                   {
+                       case "CSE":System.out.println("DS, Mysql, C++");
+                       break;
+                       case "ECE":System.out.println("EE, DE-2, Signal analysis");
+                       break;
+                       case "MECH":System.out.println("ML, MOM-II, SOM-II");
+                   }
+                   break;
+            case 4:switch(branch)
+                   {
+                       case "CSE":System.out.println("web, ST, OS");
+                       break;
+                       case "ECE":System.out.println("circuit, DE-III, micro controller");
+                       break;
+                       case "MECH":System.out.println("FM, DMI, Thermo Dynamic");
+                   }
+             break; 
+            default:System.out.println("invalid input");
+        }
+    }
+}
